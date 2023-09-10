@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const baseUrl = "https://to-do-app-backend-tbei.onrender.com";
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://to-do-app-backend-tbei.onrender.com";
+// const baseUrl = "http://localhost:5000";
 
 const getAllToDo = (checkbox1, checkbox2, setToDo) => {
   axios
