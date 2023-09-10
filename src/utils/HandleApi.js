@@ -12,9 +12,9 @@ const getAllToDo = (checkbox1, checkbox2, setToDo) => {
     });
 };
 
-const updateStatus = (checkbox1, checkbox2, todoId, completed, setToDo) => {
+const updateStatus = (checkbox1, checkbox2, todoId, setToDo) => {
   axios
-    .post(baseUrl + "/updateStatus", { _id: todoId, completed: completed })
+    .post(baseUrl + "/updateStatus", { _id: todoId, completed: true })
     .then((data) => {
       console.log(data);
       getAllToDo(checkbox1, checkbox2, setToDo);

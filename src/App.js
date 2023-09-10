@@ -98,13 +98,7 @@ function App() {
               text={item.text}
               completed={item.completed}
               updateStatus={() =>
-                updateStatus(
-                  checkbox1,
-                  checkbox2,
-                  item._id,
-                  item.completed,
-                  setToDo
-                )
+                updateStatus(checkbox1, checkbox2, item._id, setToDo)
               }
               updateMode={() => updateMode(item._id, item.text)}
               deleteToDo={() =>
